@@ -133,7 +133,7 @@ button {
     padding: 12px 24px;
     border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: transform 0.3s ease, background 0.3s ease;
     font-size: 18px;
 }
 
@@ -148,10 +148,13 @@ footer {
     backdrop-filter: blur(8px);
     text-align: center;
     padding: 25px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.3);
-    color: rgba(255, 223, 186, 1);
-    font-size: 16px;
+}
+/* Ocultar todas las secciones por defecto */
+.seccion {
+  display: none;
+}
+
+/* Mostrar la sección activa */
+.seccion.activa {
+  display: block;
 }
